@@ -28,10 +28,10 @@ jQuery(document).ready(function($) {
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
     
-    $("#rss-feeds").rss(
+    /*$("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "https://feeds.feedburner.com/TechCrunch/startups",
+        "https://anchor.fm/s/115c9610/podcast/rss",
         
         {
         // how many entries do you want?
@@ -60,14 +60,14 @@ jQuery(document).ready(function($) {
         entryTemplate: '<div class="item"><h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a></div></div>'
         
         }
-    );
+    );*/
     
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    new GitHubCalendar("#github-graph", "IonicaBizau");
+    new GitHubCalendar("#github-graph", "zethporter");
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "mdo", selector: "#ghfeed" });
+    GitHubActivity.feed({ username: "zethporter", selector: "#ghfeed" });
 
 
 });
