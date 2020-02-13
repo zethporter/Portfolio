@@ -9,7 +9,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #DAE3E7;
+  background: #048ba8;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #3AAA64;
+  color: #778492; /*#3AAA64*/
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -32,7 +32,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: #5f6b77;
-  color: #2d844e;
+  color: #048ba8;
 }
 
 a:focus {
@@ -446,7 +446,7 @@ a.dotted-link:hover {
 
 .skills .skillset .level-bar-inner {
   height: 15px;
-  background: #66cb8c;
+  background: #048ba8;
 }
 
 .skills .svg-inline--fa {
@@ -467,7 +467,7 @@ a.dotted-link:hover {
 .testimonials .item .quote {
   color: #666;
   font-size: 16px;
-  border-left: 5px solid #9fdeb7;
+  border-left: 5px solid #048ba8;
   padding: 5px 15px;
   margin-bottom: 15px;
 }
@@ -477,7 +477,7 @@ a.dotted-link:hover {
 }
 
 .testimonials .item .quote .svg-inline--fa {
-  color: #79d19a;
+  color: #048ba8;
   margin-right: 15px;
 }
 
@@ -541,7 +541,7 @@ a.dotted-link:hover {
 }
 
 .languages .item .svg-inline--fa {
-  color: #79d19a;
+  color: #048ba8;
 }
 
 /* Blog Section */
