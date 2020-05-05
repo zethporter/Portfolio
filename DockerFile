@@ -1,0 +1,8 @@
+FROM python:3.6
+MAINTAINER Zeth Porter "zethwporter@gmail.com"
+RUN apt install python3-pip
+ADD . /app
+WORKDIR /app
+RUN pip3 install flask gunicorn
+EXPOSE 8000
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "application"]

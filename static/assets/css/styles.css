@@ -1,15 +1,35 @@
-/*!   
- * Template Name: Developer - Responsive Website Template for Developers
- * Version: 2.2
- * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: https://themes.3rdwavemedia.com/
-*/
+:root{
+--color-primary-0: #277553;   	/* Main Primary color */
+--color-primary-1: #75AF96;
+--color-primary-2: #499272;
+--color-primary-3: #0F5738;
+--color-primary-4: #003A21;
+
+--color-secondary-1-0: #AA7939;	/* Main Secondary color (1 */
+--color-secondary-1-1: #FFDBAA;
+--color-secondary-1-2: #D4A76A;
+--color-secondary-1-3: #805215;
+--color-secondary-1-4: #553100;
+
+--color-secondary-2-0: #983351;	/* Main Secondary color (2 */
+--color-secondary-2-1: #E498AF;
+--color-secondary-2-2: #BE5F7C;
+--color-secondary-2-3: #721330;
+--color-secondary-2-4: #4C0017;
+
+  --box-color: #ffffffda;
+  --text-color: /**#49515a*/var(--color-primary-4);
+  --grey: #6b6b6b;
+}
+
+
+
+
+
 body {
   font-family: 'Lato', arial, sans-serif;
-  color: #434343;
-  background: #048ba8;
+  color: var(--grey);
+  background: var(--color-primary-4);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +38,26 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  color: #778492;
+  color: var(--text-color);
+}
+
+/** infoLink stuff*/
+
+i.infoLink{
+  color: var(--grey);
+}
+
+a.infoLink{
+  color: var(--color-primary-3);
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+a.infoLink:hover{
+  color: var(--color-primary-4);
+}
+
+.content .list-unstyled .info{
+  fill: var(--text-color);
 }
 
 a {
@@ -118,8 +157,7 @@ a.dotted-link:hover {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: #f5f5f5;
-  border-top: 10px solid #778492;
+  background: var(--box-color);
 }
 
 .header .btn {
@@ -133,14 +171,14 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .name {
-  color: #49515a;
+  color:var(--text-color);
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
 }
 
 .header .profile-content .desc {
-  color: #778492;
+  color: var(--color-primary-3);
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -149,7 +187,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a {
-  background: #b0b7bf;
+  background: var(--color-secondary-1-0);
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -166,7 +204,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a:hover {
-  background: #778492;
+  background: var(--color-secondary-2-4);
 }
 
 .header .profile-content .social a .svg-inline--fa {
@@ -185,14 +223,14 @@ a.dotted-link:hover {
 }
 
 .section .section-inner {
-  background: #fff;
+  background: var(--box-color);
   padding: 30px;
 }
 
 .section .heading {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #545e69;
+  color: vaf(--text-color);
   font-size: 24px;
 }
 
@@ -353,7 +391,7 @@ a.dotted-link:hover {
 }
 
 .experience .item .title .place a {
-  color: #999;
+  color: var(--color-primary-3);
 }
 
 .experience .item .title .place a:hover {
@@ -361,13 +399,14 @@ a.dotted-link:hover {
 }
 
 .experience .item .title .year {
-  color: #999;
+  color: var(--grey);
   font-weight: normal;
 }
 
 /* Git section */
 .github-graph {
   margin-bottom: 30px;
+  background: #91919121;
 }
 
 .github-graph .js-calendar-graph-svg {
@@ -394,7 +433,7 @@ a.dotted-link:hover {
 /* Info Section */
 .info .svg-inline--fa {
   margin-right: 15px;
-  color: #ccd1d6;
+  /**color: #ccd1d6;*/
 }
 
 .info .svg-inline--fa.fa-envelope-o {
@@ -430,7 +469,7 @@ a.dotted-link:hover {
 }
 
 .skills .skillset .level-title .level-label {
-  color: #ccd1d6;
+  color: var(--color-primary-3);
   font-size: 14px;
   font-weight: 400;
   font-family: "Lato", arial, sans-serif;
@@ -446,7 +485,11 @@ a.dotted-link:hover {
 
 .skills .skillset .level-bar-inner {
   height: 15px;
-  background: #048ba8;
+  background: var(--color-secondary-1-0);
+}
+
+.skills .skillset .level-bar-inner:hover{
+  background: var(--color-secondary-2-4);
 }
 
 .skills .svg-inline--fa {
@@ -467,7 +510,7 @@ a.dotted-link:hover {
 .testimonials .item .quote {
   color: #666;
   font-size: 16px;
-  border-left: 5px solid #048ba8;
+  border-left: 5px solid var(--color-primary-2);
   padding: 5px 15px;
   margin-bottom: 15px;
 }
@@ -477,7 +520,7 @@ a.dotted-link:hover {
 }
 
 .testimonials .item .quote .svg-inline--fa {
-  color: #048ba8;
+  color: var(--color-primary-2);
   margin-right: 15px;
 }
 
@@ -513,13 +556,13 @@ a.dotted-link:hover {
 .education .item .university {
   font-family: "Lato", arial, sans-serif;
   font-size: 13px;
-  color: #999;
+  color: var(--color-primary-3);
   font-weight: 600;
   padding-left: 25px;
 }
 
 .education .item .university .year {
-  color: #b0b7bf;
+  color: var(--grey);
   font-weight: 500;
 }
 
@@ -529,11 +572,11 @@ a.dotted-link:hover {
 }
 
 .languages .item .title {
-  color: #778492;
+  color: var(--color-primary-3);
 }
 
 .languages .item .level {
-  color: #999;
+  color: var(--grey);
 }
 
 .languages .item:last-child {
@@ -541,7 +584,7 @@ a.dotted-link:hover {
 }
 
 .languages .item .svg-inline--fa {
-  color: #048ba8;
+  color: var(--color-secondary-1-2);
 }
 
 /* Blog Section */
@@ -579,13 +622,6 @@ a.dotted-link:hover {
   margin-right: 5px;
 }
 
-.list ul li a {
-  color: #778492;
-}
-
-.list ul li a:hover {
-  color: #49515a;
-}
 
 /* Credits */
 .credits ul li {
@@ -620,25 +656,7 @@ a.dotted-link:hover {
 }
 
 /* ======= Footer ======= */
-.footer {
-  background: #32383e;
-  color: #fff;
-  padding: 10px 0;
-}
 
-.footer .copyright {
-  line-height: 1.6;
-  color: #a1aab4;
-  font-size: 14px;
-}
-
-.footer a {
-  color: #fff;
-}
-
-.footer .fa-heart {
-  color: #fb866a;
-}
 
 @media (max-width: 767.98px) {
   .header {
