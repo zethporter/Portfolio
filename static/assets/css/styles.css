@@ -685,3 +685,22 @@ a.dotted-link:hover {
     max-width: inherit;
   }
 }
+
+.footer {
+margin: 0;
+}
+
+footer div{
+  background-color: #070707;
+  padding: .4em 0;
+  position: static;
+  margin-bottom: 0;
+}
+
+footer p{
+  color: var(--box-color);
+  text-align: center;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: small;
+}
